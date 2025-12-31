@@ -1,0 +1,33 @@
+html {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.answer-area {
+  color: white;
+  text-align: center;
+}
+
+.gameboard-container {
+  display: grid;
+  grid-template-areas:
+    "one two three"
+    "four five six"
+    "seven eight nine";
+  border: solid 2px white;
+  margin: 10px;
+  width: 100vh;
+  height: 100vh;
+}
+
+.cell {
+  width: 100%;
+  border: solid 2px white;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 5rem;
+  text-align: center;
+  place-content: center;
+}
